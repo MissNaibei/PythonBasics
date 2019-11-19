@@ -47,7 +47,7 @@ z = "I love programming"
 # new_var = z[9:] gives characters to the end
 # new_var = z[9:15] the end is not included hence add 1
 new_var = z[9:16]
-#print(new_var)
+# print(new_var)
 print(new_var)
 
 name = "Faith"
@@ -61,9 +61,36 @@ print(new_var)
 # print(ID)
 
 my_friend = "halima"
-print(my_friend.capitalize())
-x = my_friend.capitalize()
-print(x)
-y = x.lower()
-print(y)
-str.count(x)
+# print(my_friend.capitalize())
+# x = my_friend.capitalize()
+# print(x)
+# y = x.lower()
+# print(y)
+
+# len(x)
+
+# name = "valentine"
+# print(name)
+
+string = "valentine"
+print(len(string))
+
+# how to count the number of characters (character frequency) in a string
+s = "books"
+m = s.count("o")
+print(m)
+
+# Python program to count the occurrences of the word "python"
+
+b = "We are learning how to program in python. I find python programming fun"
+m = b.count("python")
+print(m)
+
+# Python function to reverse "reven"
+
+# r = "reven"
+# q =  r[::-1]
+# print(q)
+
+
+
