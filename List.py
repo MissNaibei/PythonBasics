@@ -31,3 +31,7 @@ lst2 = [4, 5, 6]
 # lst3 = lst1+lst2
 # print(lst3)
 
+
+Friends = ["Bree", "Maria", "Jason"]
+Friends[1] = "James"
+print(Friends)
