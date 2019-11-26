@@ -19,9 +19,9 @@ def animals(chicken,cows,pigs):
     total_legs = 2 * chicken + 4 * cows + 4 * pigs
     return total_legs
 
-print(animals(2, 3, 5))
-print(animals(1, 2, 3))
-print(animals(5, 2, 8))
+# print(animals(2, 3, 5))
+# print(animals(1, 2, 3))
+# print(animals(5, 2, 8))
 
 """
 Create a function that takes a list of numbers. Return the largest number in the list.
@@ -61,13 +61,13 @@ def concatinate_Integers(List1, list2):
     return joint
 
 joint_List = concatinate_Integers([1, 3, 5], [2, 6, 8])
-print(joint_List)
+# print(joint_List)
 
 joint_List = concatinate_Integers([7, 8], [10, 9, 1, 1, 2])
-print(joint_List)
+# print(joint_List)
 
 joint_List = concatinate_Integers([4, 5, 1], [3, 3, 3, 3, 3])
-print(joint_List)
+# print(joint_List)
 
 """
 Create a function that takes two strings as arguments and return either True or False depending on whether the total 
@@ -80,21 +80,13 @@ def arguments (str1, str2):
     else:
         return "False"
 
-print(arguments("AB","CD"))
-print(arguments("ABC", "DE"))
-print(arguments("hello", "edabit"))
+# print(arguments("AB","CD"))
+# print(arguments("ABC", "DE"))
+# print(arguments("hello", "edabit"))
 
 """
 Write a function that converts a dictionary into a list, where each element represents a key-value pair.
 """
-
-def convert_to_array (aDict):
-    for k,v in aDict:
-        return [k,v]
-
-    list_array = convert_to_array({"a": 1, "b": 2 })
-
-    print(list_array)
 
 #     list_key_value = [[k, v] for k, v in aDict.items()]
 #     return list_key_value
@@ -103,11 +95,36 @@ def convert_to_array (aDict):
 # print(convert_to_array({ "shrimp": 15, "tots": 12 }))
 # print(convert_to_array({}))
 
-"""
-You work for a manufacturer, and have been asked to calculate the total profit made on the sales of a product. 
-You are given a dictionary containing the cost price per unit (in dollars), sell price per unit (in dollars), and the
-starting inventory. Return the total profit made, rounded to the nearest dollar. Assume all of the inventory has been
-sold.
+aDict = {"a": 1, "b": 2}
+
+
+
+for each in aDict.items():
+    # print(each)
+    c = list(each)
+    # print(c)
+    # print(list(c.append(each))
+
+
+
 
 """
-# def profit ({"cost",price, "inventory",sold}):
+You work for a manufacturer, and have been asked to calculate the total profit made on the sales of a product. You 
+are given a dictionary containing the cost price per unit (in dollars), sell price per unit (in dollars), and the 
+starting inventory. Return the total profit made, rounded to the nearest dollar. Assume all of the inventory has 
+been sold.
+"""
+
+def profit(aDict):
+    cost = aDict["cost_price"]
+    selling = aDict["sell_price"]
+    stock = aDict["inventory"]
+    gains = str(selling*stock - cost*stock)
+    return gains
+print(gains)
+
+profit({
+  "cost_price": 32.67,
+  "sell_price": 45.00,
+  "inventory": 1200
+})
